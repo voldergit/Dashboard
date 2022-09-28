@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #292d32;
+}
+
+.container {
+  max-width: 1381px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.aside {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  width: 100%;
+  max-width: 267px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.aside__logo {
+  display: flex;
+  margin: 36px 0 64px -11px;
+}
+.aside__logo-text {
+  margin-top: 18px;
+  margin-left: 4px;
+  font-size: 10px;
+  line-height: 15px;
+  color: #838383;
+}
+.aside__list {
+  color: #9197b3;
+}
+.aside__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+  margin-left: -11px;
+  margin-right: 28px;
+  padding: 9px 124px 13px 11px;
+  border-radius: 8px;
+  position: relative;
+}
+.aside__item:hover {
+  background-color: #5932ea;
+  color: #ffffff;
+}
+.aside__item:hover svg path {
+  stroke: #ffffff;
+}
+.aside__item-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.aside__item:nth-child(2):hover svg path {
+  fill: #ffffff;
+}
+.aside__item:nth-child(5):hover svg path {
+  fill: #ffffff;
+}
+.aside__item:nth-child(6):hover svg path {
+  fill: #ffffff;
+}
+.aside__item:not(:first-child)::after {
+  content: url("../images/chevron-right.svg");
+  position: absolute;
+  top: 13px;
+  right: 14px;
+}
+.aside__item:not(:first-child):hover::after {
+  content: url("../images/chevron-right-wh.svg");
+  position: absolute;
+  top: 13px;
+  right: 14px;
+}
+.aside__user {
+  margin: auto 0 78px -11px;
+  display: flex;
+  align-items: center;
+}
+.aside__user-info {
+  margin-left: 12px;
+  letter-spacing: 0.01em;
+}
+.aside__user-name {
+  color: #000000;
+}
+.aside__user-position {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #757575;
+}
+
+.main {
+  background-color: #fafbff;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
